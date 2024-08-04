@@ -1,9 +1,11 @@
-function add(a, b) {
-  return a + b;
+function add(a, b, c) {
+  return arguments;
 }
 
-console.log(add(4, 6));
+console.log(add(10, 20, 30));
 
-const add2 = (a, b) => a + b;
+const add2 = (a, b, c) => {
+  return arguments;
+};
 
-console.log(add2(10, 15));
+console.log(add2(15, 25, 35));
