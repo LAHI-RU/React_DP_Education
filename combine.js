@@ -10,4 +10,4 @@ const obj2 = { third: 30, fourth: 40 };
 
 const obj3 = { ...obj1, ...obj2 };
 
-const obj3 = 
+console.log(obj3);
