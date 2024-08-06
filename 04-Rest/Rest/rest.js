@@ -1,4 +1,4 @@
-const arr1 = [5, 5, 5, 5, 5, 5];
+const arr1 = [5, 5, 5, 5, 5, 5, 100];
 
 function sum(...args) {
   let sum = 0;
