@@ -23,6 +23,6 @@ class programmer extends person {
 const john = new person("John", "32");
 
 const jane = new programmer("Jane", "28", "JavaScript");
-// console.log(jane.code());
+console.log(jane.code());
 
 console.log(john.code());
