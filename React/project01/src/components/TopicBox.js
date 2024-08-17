@@ -5,7 +5,10 @@ export default function TopicBox(props) {
   return (
     <div>
       <div className="topicBox">
-        <span className="text">My favourite food is {props.food}</span>
+        <span className="text">
+          My favourite food is {props.food}. The price is {props.price}
+        </span>
+        {props.children}
       </div>
     </div>
   );
