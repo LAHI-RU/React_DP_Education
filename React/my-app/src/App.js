@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
+import Spinner from "react-bootstrap/Spinner";
 
 function App() {
   return (
@@ -52,6 +54,28 @@ function App() {
       <Button variant="primary">Primary</Button>{" "}
       <Button variant="secondary">Secondary</Button>{" "}
       <Button variant="danger">Danger</Button>{" "}
+      <>
+        <Button variant="primary" disabled>
+          <Spinner
+            as="span"
+            animation="border"
+            size="sm"
+            role="status"
+            aria-hidden="true"
+          />
+          <span className="visually-hidden">Loading...</span>
+        </Button>{" "}
+        <Button variant="primary" disabled>
+          <Spinner
+            as="span"
+            animation="grow"
+            size="sm"
+            role="status"
+            aria-hidden="true"
+          />
+          Loading...
+        </Button>
+      </>
     </div>
   );
 }
